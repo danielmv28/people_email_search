@@ -1,0 +1,40 @@
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	min-width: 380px;
+
+}
+
+/*Darle el tamaño correcto a los iconos*/
+.icon_size{
+	height: 20px;
+	width: 20px;
+}
+.logo{
+	width: 100px;
+	height: 25px;
+}
+.titulos{
+	font-size: 45px;
+
+}
+.cajas{
+	width: 55px;
+}
+.pages{
+	display: none;
+
+}
+.active{
+	display: block;
+}
+.center{
+	text-align: center;
+}
+.card-body{
+	border:1px solid #ccc;
+	border-radius: 100px;
+}
