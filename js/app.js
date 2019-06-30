@@ -61,7 +61,6 @@
 		function displayPhoneNumber(phoneNumbers){
 			var mainDiv=document.createElement('div');
 			for(i=0;i<phoneNumbers.length;i++){
-				console.log(phoneNumbers[i]);
 				var phone=phoneNumbers[i].phone;
 				var p = document.createElement('p');
 				p.innerHTML = phone;
@@ -72,7 +71,6 @@
 		function displayRelatives(relatives){
 			var Div=document.createElement('div');
 			for(i=0;i<relatives.length;i++){
-				console.log(relatives[i]);
 				var rel_name=relatives[i].name;
 				var p = document.createElement('p');
 
@@ -103,7 +101,6 @@
 		       var respuesta=JSON.parse(xhttp.responseText);
 		       data=respuesta.data;
 		       var salida='';
-		       console.log(data);
 		    }
 		};
 		xhttp.open("GET", "../js/data.json", true);
