@@ -73,10 +73,12 @@
 			var Div=document.createElement('div');
 			for(i=0;i<relatives.length;i++){
 				var rel_name=relatives[i].name;
-				var p = document.createElement('p');
-
-				p.innerHTML = rel_name;
-				Div.appendChild(p);
+				if (rel_name!=undefined) {
+					var p = document.createElement('p');
+					p.innerHTML = rel_name;
+					Div.appendChild(p);
+				}
+				
 			}
 			return Div;
 		}
