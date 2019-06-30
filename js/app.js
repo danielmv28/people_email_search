@@ -15,6 +15,7 @@
 					displayNone(foundedEmail);
 					getLocalStorage();
 					displayBlock();
+					document.getElementById('userName').scrollIntoView();
 				} else {
 					document.querySelector('#error').style.display='block';
 				}		
