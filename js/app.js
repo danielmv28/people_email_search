@@ -5,7 +5,7 @@ window.addEventListener('load',function(){
 	var email=document.querySelector('#email');
 	var email_reasearch=document.querySelector('#email2');
 	var data=[];
-	//VALIDACION DEL EMAIL
+	//Email validation 
 	function validateEmail(email_input){
 		if (email_input.value=="") { //Validate that this is an email (REGEX)
 			document.querySelector('#error').style.display='block';
@@ -22,9 +22,9 @@ window.addEventListener('load',function(){
 			}		
 		}
 	}
+	//VALIDATE THAT EMAIL IS IN JSON
 	function findEmail(email_val){
 		var foundedObject;
-		// Validate that email is in JSON
 		for (var i = 0; i < data.length; i++){
 		  if (data[i].email == email_val){
 		   foundedObject = data[i];
@@ -32,6 +32,7 @@ window.addEventListener('load',function(){
 		}
 		return foundedObject;
 	}
+	//SAVE IN LOCAL STORAGE
 	function displayNone(foundedObject){
 		localStorage.setItem('name',foundedObject.name);
 		localStorage.setItem('address',foundedObject.address);
@@ -42,6 +43,7 @@ window.addEventListener('load',function(){
 		localStorage.setItem('relatives',JSON.stringify(foundedObject.relatives));
 		document.querySelector('#firstContainer').style.display='none';
 	}
+	//GET THE VALUES IN LOCAL STORAGE
 	function getLocalStorage(){
 		var name=localStorage.getItem('name');
 		var addr=localStorage.getItem('address');
@@ -60,6 +62,7 @@ window.addEventListener('load',function(){
 		document.querySelector('#userRelatives').appendChild(displayRelatives(relatives));
 		document.querySelector('#userAge').innerHTML=age;
 	}
+	//SHOWS IN THE DOCUMENT PHONES NUMBERS
 	function displayPhoneNumber(phoneNumbers){
 		var mainDiv=document.createElement('div');
 		for(i=0;i<phoneNumbers.length;i++){
@@ -70,6 +73,7 @@ window.addEventListener('load',function(){
 		}
 		return mainDiv;
 	}
+	//SHOWS IN THE DOCUMENT RELATIVES
 	function displayRelatives(relatives){
 		var Div=document.createElement('div');
 		for(i=0;i<relatives.length;i++){
@@ -83,9 +87,8 @@ window.addEventListener('load',function(){
 		}
 		return Div;
 	}
-	//MUESTRA LA SECCION DE LOS RESULTADOS
+	//SHOWS RESULTS SECCION
 	function displayBlock(email){
-
 		document.querySelector('#results').style.display='block';
 	}
 	boton_go.addEventListener('click',function(){
@@ -94,6 +97,7 @@ window.addEventListener('load',function(){
 	boton_go2.addEventListener('click',function(){
 		validateEmail(email_reasearch);
 	});
+	//GET JSON
 	function getData(){
 		var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
