@@ -49,17 +49,17 @@
 	</div>
 
 	<form class="form-inline d-flex justify-content-center"onsubmit="return false;">
-		<span class="col-9 text-danger pages" id="error">Error</span>
+		<span class="col-9 text-danger pages" id="error">Please add a valid email address</span>
 		<input class="col-12 col-md-9 col-lg-7 form-control mb-2 mr-2" type="email" class="form-control" id="email" placeholder="EMAIL">
 
 		<input type="submit" value="GO!" name="" class=" col-12 col-md-2 col-lg-2 form-control btn btn-warning mb-2"  id="btn_submit"></input>
 	</form>
 
 	<div class="row d-flex justify-content-center">
-		<div class="col-1">
+		<div class="col-1 d-flex justify-content-end">
 			<img class="icon_size" src="../media/lock@2x.png">
 		</div>
-		<div class="col-10">
+		<div class="col-10 ">
 			<p class="text-warning">
 				Enter Any Email Address. They won't be notified.
 			</p>
@@ -70,7 +70,7 @@
 	---------------------MAIN CONTENT
 	--------------------------------------------------->
 	<main class="bg-light ">
-	<div class="row d-flex justify-content-center">
+	<div class="row d-flex justify-content-center mt-5 mb-3">
 		<h2 class=" col-12 txt-primary-color titles center">
 			Reverse Email Lookup
 		</h2>
@@ -157,116 +157,119 @@
 <!--------------------------------------------------
 ---------------------------RESULTS
 -------------------------------------------------->
-<div class="container pages bg-color" id="results">
-
-<!-------------ICONS---------------->
-<div class="row d-flex primary-color justify-content-around">
-	<div class="col-6 col-md-6 col-lg-3 col ">
-		<img class="logo" src="../media/Logo@2x.png" alt="Logo de la compañia">
-	</div>
-
-	<div class="col-6 col-md-6 col-lg-3  d-flex justify-content-end">
-		<img class="icon_size" src="../media/icn_search@2x.png" alt="imagen de busqueda">
-
-		<img class="icon_size ml-3" src="../media/icn_person@2x.png" alt="imagen de persona">
-	</div>
-</div>
-<!-------------------------------INFO----------------------------->
-<div class="row d-flex bg-ligth ">
-	<div class="col-12 center">
-		<h2 class="titles txt-primary-color">
-			Result
-		</h2>
-	</div>
-	<div class="col-12 center">
-		<p>
-			Look at the result below to see the details of the person you're searched for.
-		</p>
-	</div>
-</div>
-
-<div class="card-body shadow p-3 mb-5 bg-white rounded">
-	<div class="row">
-		<div class="icon-toggle col-md-1 col-lg-1 primary-color  bg-rounded-lg bg-rounded-md bg-rounded-col mr-3">
-				<img class="icon_size" src="../media/icn_person@2x.png" alt="imagen de persona">
+<div class="container-fluid pages" id="results">
+	<div class="container.fluid  bg-color" >
+	<!-------------ICONS---------------->
+		<div class="row d-flex primary-color justify-content-around">
+			<div class="col-6 col-md-6 col-lg-3 col ">
+				<img class="logo" src="../media/Logo@2x.png" alt="Logo de la compañia">
 			</div>
-		
-		<span id="userName" class="user-title txt-primary-color">
-		</span>
-		<span class="user-title txt-primary-color">,</span>
-		<span id="userAge" class="user-title txt-primary-color"></span>
+
+			<div class="col-6 col-md-6 col-lg-3  d-flex justify-content-end">
+				<img class="icon_size" src="../media/icn_search@2x.png" alt="imagen de busqueda">
+
+				<img class="icon_size ml-3" src="../media/icn_person@2x.png" alt="imagen de persona">
+			</div>
+		</div>
 	</div>
-	
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. 
-	</p>
-	<section class="row">
-		<div class="col-12 col-md-5 col-lg-6 ">
-			<h3 class="txt-primary-color">Address</h3>
-			<p id="userAddress"></p>
-		</div>
-		<div class="col-12 col-md-5 col-lg-6 ">
-			<h3 class="txt-primary-color">Phone Numbers</h3>
-			<p id="userPhone" class="txt-color"></p>
-		</div>
-		<div class="col-12 col-md-5 col-lg-6 ">
-			<h3 class="txt-primary-color">Email</h3>
-			<p id="userEmail"></p>
+	<!-------------------------------INFO----------------------------->
+	<div class="container">
+		<div class="row d-flex bg-ligth ">
+			<div class="col-12 center">
+				<h2 class="titles txt-primary-color mt-3">
+					Result
+				</h2>
+			</div>
+			<div class="col-12 center">
+				<p>
+					Look at the result below to see the details of the person you're searched for.
+				</p>
+			</div>
 		</div>
 
-		<div class="col-12 col-md-5 col-lg-6 ">
-			<h3 class="txt-primary-color">Relatives</h3>
-			<p id="userRelatives"></p>
+		<div class="shadow p-3 mb-5 bg-white ">
+			<div class="row">
+				<div class="icon-toggle col-md-1 col-lg-1 primary-color  bg-rounded-lg bg-rounded-md bg-rounded-col mr-3">
+						<img class="icon_size" src="../media/icn_person@2x.png" alt="imagen de persona">
+					</div>
+				
+				<span id="userName" class="user-title txt-primary-color">
+				</span>
+				<span class="user-title txt-primary-color">,</span>
+				<span id="userAge" class="user-title txt-primary-color"></span>
+			</div>
+			
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. 
+			</p>
+			<section class="row">
+				<div class="col-12 col-md-5 col-lg-6 ">
+					<h3 class="txt-primary-color">Address</h3>
+					<p id="userAddress"></p>
+				</div>
+				<div class="col-12 col-md-5 col-lg-6 ">
+					<h3 class="txt-primary-color">Phone Numbers</h3>
+					<p id="userPhone" class="txt-color"></p>
+				</div>
+				<div class="col-12 col-md-5 col-lg-6 ">
+					<h3 class="txt-primary-color">Email</h3>
+					<p id="userEmail"></p>
+				</div>
+
+				<div class="col-12 col-md-5 col-lg-6 ">
+					<h3 class="txt-primary-color">Relatives</h3>
+					<p id="userRelatives"></p>
+				</div>
+			</section>
 		</div>
-	</section>
-</div>
-<!----------------------RESEARCH------------------>
-<div class="mt-4 primary-color p-2">
-<div class="row d-flex justify-content-around mt-3">
-	<div class="col-9 col-md-10 col-lg-10 ">
-		<h1 class="text-white d-flex justify-content-center">Can't FindThe Right Person?</h1>
 	</div>
-</div>
-
-<div class="row d-flex justify-content-center">
-	<div class="col-10 col-md-10 col-lg-10">
-		<p class="text-white">
-			<span class="text-warning font-weight-bold">Try Again</span>
-			Make a new search.
-		</p>
+	<!----------------------RESEARCH------------------>
+	<div class="mt-4 primary-color container-fluid p-2 ">
+	<div class="row d-flex justify-content-around mt-3">
+		<div class="col-9 col-md-10 col-lg-10 ">
+			<h1 class="text-white d-flex container.fluid justify-content-center">Can't FindThe Right Person?</h1>
+		</div>
 	</div>
-</div>
 
-<form class="form-inline d-flex justify-content-center" onsubmit="return false">
-	<span class="col-12 pages text-danger" id="error2">Error</span>
-		<input class="col-12 col-md-9 col-lg-7 form-control mb-2 mr-2" type="email" class="form-control" id="email2" placeholder="EMAIL">
-
-		<input type="submit" value="GO!" name="" class=" col-12 col-md-2 col-lg-2 form-control btn btn-warning mb-2"  id="btn_submit2"></input>
-</form>
-
-<div class="row d-flex justify-content-center">
-	<div class="col-1">
-		<img class="icon_size" src="../media/lock@2x.png">
+	<div class="row d-flex justify-content-center">
+		<div class="col-10 col-md-10 col-lg-10">
+			<p class="text-white">
+				<span class="text-warning font-weight-bold">Try Again</span>
+				Make a new search.
+			</p>
+		</div>
 	</div>
-	<div class="col-10">
-		<p class="text-warning">
-			Enter Any Email Address. They won't be notified.
-		</p>
-	</div>
-</div>
-</div>
-</div>
 
+	<form class="form-inline d-flex justify-content-center" onsubmit="return false">
+		<span class="col-12 pages text-danger" id="error2">Error</span>
+			<input class="col-12 col-md-9 col-lg-7 form-control mb-2 mr-2" type="email" class="form-control" id="email2" placeholder="EMAIL">
+
+			<input type="submit" value="GO!" name="" class=" col-12 col-md-2 col-lg-2 form-control btn btn-warning mb-2"  id="btn_submit2"></input>
+	</form>
+
+	<div class="row d-flex justify-content-center">
+		<div class="col-1">
+			<img class="icon_size" src="../media/lock@2x.png">
+		</div>
+		<div class="col-10">
+			<p class="text-warning">
+				Enter Any Email Address. They won't be notified.
+			</p>
+		</div>
+	</div>
+	</div>
+
+</div>
 <!--------------------------------------------------
 -------------------------FOOTER
 ---------------------------------------------------->
 <footer class="row mt-3 card-footer bg-white">
 <div class="col-12 col-md-10 col-lg-10 text-muted d-flex justify-content-center">
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	<p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat.
+	consequat.</p>
 </div>
 <div class="col-12 col-md-2 col-lg-2 d-flex justify-content-center">
 	<span class="links"><a href="">Terms</a> | <a href="">Privacy</a></span>
