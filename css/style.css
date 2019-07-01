@@ -4,26 +4,30 @@
 	margin: 0px;
 }
 body{
-	min-width: 380px;
-
+	min-width: 500px;
+	padding: 10px;
 }
 
-/*Darle el tamaño correcto a los iconos*/
 .icon_size{
 	height: 20px;
 	width: 20px;
 }
 .logo{
-	width: 100px;
+	  width: 100px;
 	height: 25px;
 }
-.titulos{
+.titles{
 	font-size: 45px;
 
 }
-.cajas{
-	width: 55px;
+.txt-color p{
+	color: blue;
 }
+.user-title{
+	font-size: 35px;
+
+}
+
 .pages{
 	display: none;
 
@@ -38,3 +42,42 @@ body{
 	border:1px solid #ccc;
 	border-radius: 100px;
 }
+.primary-color{
+	background-color: #02497F;
+}
+
+.bg-color{
+	background-color: #F0F0F0;/*Soft color*/
+}
+.txt-primary-color{
+	color: #02497F;
+}
+.bg-rounded-lg{
+	display: flex;
+	align-items: center;
+	height: 77px;
+	width: 10px;
+	border-radius:50px;
+}
+.icon-toggle{
+		display: flex;
+		justify-content: center;
+	}
+@media screen and (max-width: 990px){
+	.bg-rounded-md{
+	height: 60px;
+	}
+	.icon-toggle{
+		display: flex;
+		justify-content: center;
+	}	
+}
+@media screen and (max-width: 770px){
+	.bg-rounded-col{
+		height: 45px;
+	}
+	.icon-toggle{
+		display: none;
+	}	
+}
+
