@@ -45,7 +45,10 @@ body{
 .center{
 	text-align: center;
 }
-.card-body{
+.footer-text{
+	font-size: 13px;
+}
+.rounded-border{
 	border:1px solid #ccc;
 	border-radius: 100px;
 }
@@ -62,8 +65,8 @@ body{
 .bg-rounded-lg{
 	display: flex;
 	align-items: center;
-	height: 77px;
-	width: 10px;
+	height: 90px;
+	width: 5px;
 	border-radius:50px;
 }
 .icon-toggle{
