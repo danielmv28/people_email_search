@@ -9,7 +9,6 @@ window.addEventListener('load',function(){
 	function validateEmail(email_input){
 		if (email_input.value=="") { //Validate that this is an email (REGEX)
 			document.querySelector('#error').style.display='block';
-
 		}else{
 			var foundedEmail = findEmail(email_input.value)
 			if (foundedEmail != undefined){
@@ -97,7 +96,7 @@ window.addEventListener('load',function(){
 	boton_go2.addEventListener('click',function(){
 		validateEmail(email_reasearch);
 	});
-	//GET JSON
+	//GET 
 	function getData(){
 		var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
