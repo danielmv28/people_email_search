@@ -16,6 +16,10 @@ body{
 	  width: 100px;
 	height: 25px;
 }
+.card-body{
+	border:1px solid #ccc;
+	border-radius: 55px;
+}
 .titles{
 	font-size: 45px;
 
