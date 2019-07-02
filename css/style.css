@@ -6,7 +6,9 @@
 body{
 	min-width: 500px;
 }
-
+.size{
+	min-height: 50px;
+}
 .icon_size{
 	height: 20px;
 	width: 20px;
