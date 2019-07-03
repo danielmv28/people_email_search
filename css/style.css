@@ -18,6 +18,9 @@ body{
 	  width: 100px;
 	height: 25px;
 }
+.float-left{
+	float: left;
+}
 .card-body{
 	border:1px solid #ccc;
 	border-radius: 55px;
