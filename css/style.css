@@ -4,7 +4,7 @@
 	margin: 0px;
 }
 body{
-	min-width: 500px;
+	min-width: 425px;
 	margin:auto;
 }
 .size{
@@ -96,13 +96,20 @@ body{
 }
 @media screen and (max-width: 767px){
 	.bg-rounded-col{
-		height: 40px;
+		height: 45px;
 		padding-top: 8px;
 	}
 	.icon-toggle{
 		display: none;
 	}	
 }
+@media screen and (max-width: 550px){
+	.bg-rounded-col{
+		height: 35px;
+	}
+		
+}
+
 @media screen and (max-width: 575px){
 	section{
 		padding:20px;
