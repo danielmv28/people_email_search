@@ -96,7 +96,7 @@ body{
 }
 @media screen and (max-width: 767px){
 	.bg-rounded-col{
-		height: 45px;
+		height: 40px;
 		padding-top: 8px;
 	}
 	.icon-toggle{
