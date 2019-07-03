@@ -7,6 +7,10 @@ body{
 	min-width: 425px;
 	margin:auto;
 }
+footer{
+	margin: auto;
+	clear: left;
+}
 .size{
 	min-height: 50px;
 }
