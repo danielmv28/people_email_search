@@ -9,7 +9,6 @@ body{
 }
 footer{
 	margin: auto;
-	clear: left;
 }
 .size{
 	min-height: 50px;
@@ -114,11 +113,15 @@ footer{
 		
 }
 
+
 @media screen and (max-width: 575px){
 	section{
 		padding:20px;
+
 	}
 }
+
+
 
 	
 
